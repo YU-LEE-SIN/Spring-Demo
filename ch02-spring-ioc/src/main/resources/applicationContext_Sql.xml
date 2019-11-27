@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="dbproperties" class="com.homework.Properties">
+        <constructor-arg value="url"/>
+        <constructor-arg value="root"/>
+        <constructor-arg value="p-root"/>
+    </bean>
+        <bean id="Factor" class="com.homework.SqlSessionFactory">
+            <constructor-arg name="properties" ref="dbproperties"/>
+        </bean>
+
+        <bean id="factorCreate" class="com.homework.SqlSessionFactoryCreat" >
+            <constructor-arg ref="dbproperties"/>
+        </bean>
+
+        <bean id="factory" factory-bean="factorCreate" factory-method="create"></bean>
+</beans>

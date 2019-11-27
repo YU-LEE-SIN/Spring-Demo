@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd">
+    <!--**是多个路径 相当于com/xx/xx/db.properties    -->
+    <context:property-placeholder location="classpath:db.properties" local-override="true"/>
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="username" value="${username}"/>
+        <property name="password" value="${password}"/>
+        <property name="url" value="${url}"/>
+    </bean>
+<!--    pageHelper插件-->
+    <bean id="pageHelper" class="com.github.pagehelper.PageInterceptor">
+        <property name="properties">
+            <value>
+                reasonable=true
+                supportMethodsArguments=true
+            </value>
+        </property>
+    </bean>
+<!--  日志  -->
+    <bean id="log" class="org.apache.ibatis.session.Configuration">
+        <!--配置显示sql的日志-->
+        <property name="logImpl" value="org.apache.ibatis.logging.stdout.StdOutImpl"/>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!--Mapper映射文件-->
+        <property name="mapperLocations" value="classpath*:/*Mapper.xml"/>
+        <!--分页插件-->
+        <property name="plugins" ref="pageHelper"/>
+        <!--  日志  -->
+        <property name="configuration" ref="log"/>
+    </bean>
+    <!--   扫描com.dao下面的所有类依旧com.dao的所有子包下面类,
+       扫描会包里面的所有的dao的实现类都创建出来并注册到spring容器中-->
+    <mybatis:scan base-package="com.dao"/>
+
+    <bean id="userInfoService" class="com.service.UserInfoServiceImpl"
+          autowire="byType">
+    </bean>
+</beans>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/ch07-spring-mybatis-druid-two" />
+    <file type="web" url="file://$PROJECT_DIR$/ch16-spring-mybatis-code" />
+    <file type="web" url="file://$PROJECT_DIR$/ch17-mvc-helloworld" />
+    <file type="web" url="file://$PROJECT_DIR$/ch18-mvc-processflow" />
+    <file type="web" url="file://$PROJECT_DIR$/ch19-mvc-request-mapping" />
+    <file type="web" url="file://$PROJECT_DIR$/ch20-mvc-receive-data" />
+    <file type="web" url="file://$PROJECT_DIR$/ch21-mvc-verificaton" />
+    <file type="web" url="file://$PROJECT_DIR$/ch22-mvc-view" />
+    <file type="web" url="file://$PROJECT_DIR$/ch23-mvc-static" />
+    <file type="web" url="file://$PROJECT_DIR$/ch24-mvc-json" />
+    <file type="web" url="file://$PROJECT_DIR$/ch25-mvc-exception" />
+    <file type="web" url="file://$PROJECT_DIR$/ch26-mvc-interceptor" />
+    <file type="web" url="file://$PROJECT_DIR$/ch27-mvc-file" />
+    <file type="web" url="file://$PROJECT_DIR$/ch28-ssm-xml" />
+    <file type="web" url="file://$PROJECT_DIR$/ch30-servlet3" />
+    <file type="web" url="file://$PROJECT_DIR$/ch31-mvc-code" />
+    <file type="web" url="file://$PROJECT_DIR$/ch32-ssm-code" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-pageing-practice" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-practice" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-springmvc-mybatis" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/ch11-spring-aop-advisor/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/ch19-mvc-request--mapping/pom.xml" />
+        <option value="$PROJECT_DIR$/practice-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mybatis-druild-ch06/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-pageing-practice/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-practice/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

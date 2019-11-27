@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init" default-destroy-method="destroy">
+    <!--beans这里可以通过default-init-method
+    以及default-destroy-method来设置全局的初始化方法与销毁方法
+    全局设置之后,spring管理的所有bean的初始化与销毁都不需要再进行设置
+    如果是singleton,init只会执行一次
+    prototype的话就会反复调用-->
+    <bean id="lifeCycle1" class="com.lifecycle.ProductLifeCycle" >
+
+    </bean>
+
+   <!-- 如果某一个bean也设置了init-method或者destroy-method,
+    就会覆盖全局的设置-->
+    <bean id="lifeCycle2" class="com.lifecycle.ProductLifeCycle2"
+          init-method="init2"
+          destroy-method="destroy"
+    >
+    </bean>
+
+</beans>

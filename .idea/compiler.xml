@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ch23-mvc-static" />
+        <module name="ch15-code-container-ioc-aop-tx" />
+        <module name="ch04-spring-logback" />
+        <module name="ch03-spring-autowiring" />
+        <module name="ch02-spring-ioc" />
+        <module name="ch17-mvc-helloworld" />
+        <module name="ch09-spring-aop-advice" />
+        <module name="ch12-spring-tx" />
+        <module name="ch31-mvc-code" />
+        <module name="ch08-spring-aop" />
+        <module name="ch32-ssm-code" />
+        <module name="ch10-spring-aop-pointcut" />
+        <module name="ch27-mvc-file" />
+        <module name="ch25-mvc-exception" />
+        <module name="ch19-mvc-request-mapping" />
+        <module name="ch20-mvc-receive-data" />
+        <module name="ch21-mvc-verificaton" />
+        <module name="ch26-mvc-interceptor" />
+        <module name="ch06-spring-mybatis-druid" />
+        <module name="ch05-spring-dbutils-druild" />
+        <module name="ch07-spring-mybatis-druid-two" />
+        <module name="ch14-annation-tx" />
+        <module name="ch18-mvc-processflow" />
+        <module name="ch01-spring-container" />
+        <module name="spring-springmvc-mybatis" />
+        <module name="ch13-annotaion-container-ioc-aop" />
+        <module name="ch16-spring-mybatis-code" />
+        <module name="ch28-ssm-xml" />
+        <module name="ch24-mvc-json" />
+        <module name="ch11-spring-aop-advisor" />
+        <module name="ch30-servlet3" />
+        <module name="ch22-mvc-view" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="practice-demo" target="1.8" />
+      <module name="spring-mybatis-druild-ch06" target="1.8" />
+      <module name="spring-pageing-practice" target="1.8" />
+      <module name="spring-practice" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

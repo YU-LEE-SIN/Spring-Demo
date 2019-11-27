@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--该id属性是标识单个bean定义的字符串。
+    该class属性定义Bean的类型，并使用完全限定的类名。
+    作用域（scope）是原型（prototype）的时候，实例化容器时不会创建（ProductDao）对象，每次getbean的时候都重新创建一个新的对象。
+    作用域（scope）是单例（singleton）的时候，实例化容器时就会创建（ProductDao）对象，每次getbean的时候,直接从容器中获取即可。-->
+    <bean id="productDao" class="com.instans.ProductDao" scope="singleton">
+
+    </bean>
+
+</beans>

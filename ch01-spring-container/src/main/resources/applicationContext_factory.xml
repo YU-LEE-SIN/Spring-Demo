@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init" default-destroy-method="destroy">
+
+    <!--这种配置方法createA方法必须是静态的 -->
+    <bean id="factory"
+          class="com.factory.AFactory"
+          destroy-method="createA"/>
+
+  <!--  利用一个工厂性质(AFactory)的类+实例方法,
+    在配置factory-bean时不需要指定class属性-->
+     <bean id="factoryA" class="com.factory.AFactory"/>
+
+    <bean id="factory2"
+          factory-bean="factoryA"
+          factory-method="createB"/>
+
+    <!--利用FactoryBean接口，
+    MyFactoryBean这个类实现了FactoryBean这个接口，
+    如果没有这个实现,那么返回的就是MyFactoryBean这个实例本身。-->
+    <bean id="factory3"
+    class="com.factory.MyFactoryBean"/>
+</beans>
