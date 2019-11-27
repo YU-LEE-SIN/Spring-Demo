@@ -1593,7 +1593,6 @@ if (typeof jQuery === 'undefined') {
         .emulateTransitionEnd(Tooltip.TRANSITION_DURATION) :
       complete()
 
-
     this.hoverState = null
 
     return this
