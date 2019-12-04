@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch23-mvc-static:war">
+    <output-path>$PROJECT_DIR$/ch23-mvc-static/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ch23-mvc-static</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ch23-mvc-static-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ch23-mvc-static:war exploded" />
+    </root>
+  </artifact>
+</component>

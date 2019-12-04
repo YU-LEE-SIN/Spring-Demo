@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch20-mvc-receive-data:war">
+    <output-path>$PROJECT_DIR$/ch20-mvc-receive-data/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ch20-mvc-receive-data</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ch20-mvc-receive-data-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ch20-mvc-receive-data:war exploded" />
+    </root>
+  </artifact>
+</component>

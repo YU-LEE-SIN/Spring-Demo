@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch21-mvc-verificaton:war">
+    <output-path>$PROJECT_DIR$/ch21-mvc-verificaton/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ch21-mvc-verificaton</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ch21-mvc-verificaton-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ch21-mvc-verificaton:war exploded" />
+    </root>
+  </artifact>
+</component>

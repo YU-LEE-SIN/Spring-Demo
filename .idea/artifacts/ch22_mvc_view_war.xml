@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch22-mvc-view:war">
+    <output-path>$PROJECT_DIR$/ch22-mvc-view/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ch22-mvc-view</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ch22-mvc-view-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ch22-mvc-view:war exploded" />
+    </root>
+  </artifact>
+</component>

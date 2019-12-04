@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch31-mvc-code:war">
+    <output-path>$PROJECT_DIR$/ch31-mvc-code/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ch31-mvc-code</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ch31-mvc-code-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ch31-mvc-code:war exploded" />
+    </root>
+  </artifact>
+</component>

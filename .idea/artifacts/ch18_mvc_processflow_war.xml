@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch18-mvc-processflow:war">
+    <output-path>$PROJECT_DIR$/ch18-mvc-processflow/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ch18-mvc-processflow</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ch18-mvc-processflow-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ch18-mvc-processflow:war exploded" />
+    </root>
+  </artifact>
+</component>
