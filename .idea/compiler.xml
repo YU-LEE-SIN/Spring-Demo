@@ -27,15 +27,16 @@
         <module name="ch06-spring-mybatis-druid" />
         <module name="ch05-spring-dbutils-druild" />
         <module name="ch07-spring-mybatis-druid-two" />
-        <module name="ch14-annation-tx" />
         <module name="ch18-mvc-processflow" />
+        <module name="ch11-spring-aop-advisor" />
         <module name="ch01-spring-container" />
         <module name="spring-springmvc-mybatis" />
         <module name="ch13-annotaion-container-ioc-aop" />
+        <module name="mv-ccors" />
         <module name="ch16-spring-mybatis-code" />
         <module name="ch28-ssm-xml" />
         <module name="ch24-mvc-json" />
-        <module name="ch11-spring-aop-advisor" />
+        <module name="ch14-annation-tx" />
         <module name="ch30-servlet3" />
         <module name="ch22-mvc-view" />
       </profile>

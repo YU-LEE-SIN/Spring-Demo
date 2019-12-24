@@ -25,7 +25,7 @@ public class SystemControllerAdvice {
     @ExceptionHandler(RuntimeException.class)
     public ModelAndView handlerRuntimeException(RuntimeException e) {
         ModelAndView mav = new ModelAndView();
-        mav.setViewName("errot");
+        mav.setViewName("error");
         mav.addObject("err", e.getMessage());
         return mav;
     }

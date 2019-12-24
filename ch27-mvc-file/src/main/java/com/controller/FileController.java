@@ -17,6 +17,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URLConnection;
 import java.net.URLEncoder;
+import java.util.UUID;
 
 @Controller
 @RequestMapping("/file")
@@ -28,7 +29,8 @@ public class FileController {
     public String upload(MultipartFile myfile) {
         //得到上传过来的文件名
         String filename = myfile.getOriginalFilename();
-        String path = FILE_DIRECTORY + File.separator + filename;
+       
+        String path = FILE_DIRECTORY + File.separator + UUID.randomUUID()+filename;
         File file = new File(path);
 
         try {

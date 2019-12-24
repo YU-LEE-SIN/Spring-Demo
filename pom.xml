@@ -41,6 +41,7 @@
         <module>ch30-servlet3</module>
         <module>ch31-mvc-code</module>
         <module>ch32-ssm-code</module>
+        <module>mv-ccors</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
